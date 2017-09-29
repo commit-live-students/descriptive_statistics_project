@@ -1,7 +1,7 @@
-# Task 3:
-
 ## Pearson Correlation
 
+Great job there ... 
+Let's keep this pace ongoing and move on to our next task.
 In our lectures we have already learnt that Correlation is a technique we use to investigate the relation between quantitative and continuous variables. 
 
 You will be using Pearson's correlation coefficient (r) which is a measure of the strength of the association between two variables. 

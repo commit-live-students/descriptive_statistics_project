@@ -1,6 +1,8 @@
 # Visualize mean, median and mode 
 
-Now, that we have found the mean, median and mode, let's plot and see where these points lie on the histogram of sale price data. Also, can you draw any insights looking at the position of these central tendencies?
+Impressive start ,now lets keep this persisted motivation and focus on the next task.
+
+Since, we have found the mean, median and mode, let's plot and see where these points lie on the histogram of sale price data. Also, can you draw any insights looking at the position of these central tendencies?
 
 For these you don't need to load the data, we have already done it for you.
 
