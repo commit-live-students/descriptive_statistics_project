@@ -1,4 +1,4 @@
-## Pearson Correlation
+## Calculate the Pearson Correlation Coefficient (r) for the SalePrice column for the two loaded datasets?
 
 Great job there ... 
 Let's keep this pace ongoing and move on to our next task.
