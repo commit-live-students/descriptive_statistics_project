@@ -1,4 +1,4 @@
-## Spearman Correlation Coeffecient
+## Spearman Correlation Coefficient
 
 
 **Now what is Spearman Correlation Coefficient?**
