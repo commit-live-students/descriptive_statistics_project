@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(os.curdir)))
+
 import pandas as pd
 from unittest import TestCase
 from q01_calculate_statistics.build import calculate_statistics

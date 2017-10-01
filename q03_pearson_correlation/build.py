@@ -1,4 +1,6 @@
 # Default Imports
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(os.curdir),  '..'))
 import pandas as pd
 
 dataframe_1 = pd.read_csv('data/house_prices_multivariate.csv')

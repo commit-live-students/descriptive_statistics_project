@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 from unittest import TestCase
 from q03_pearson_correlation.build import correlation
 
