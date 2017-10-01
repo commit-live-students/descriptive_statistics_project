@@ -28,5 +28,6 @@ Solving this assignment would help you :-
     * **numpy**
     * **pandas**
     
-    
+By completing this project you have an opportunity to win 250 points!
+
 Let's get started!
