@@ -1,1 +1,6 @@
-{ "notebook": { "folder": "descriptive_statistics_project" , "file": "build.ipynb" } }
+{ "notebook": 
+    { 
+        "folder": "descriptive_statistics_project" , 
+        "file": "build.ipynb" 
+    } 
+}
