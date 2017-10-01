@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 { "notebook": { "folder": "descriptive_statistics_project" , "q01_calculate_statistics": "q01_calculate_statistics.ipynb", "q02_plot": "q02_plot.ipynb", "q03_pearson_correlation": "q03_pearson_correlation.ipynb", "q04_spearman_correlation": "q04_spearman_correlation.ipynb"} }
+=======
+{
+  "notebook": {
+    "folder": "descriptive_statistics_project",
+    "q01_calculate_statistics": "q01_calculate_statistics.ipynb",
+    "q02_plot": "q02_plot.ipynb"
+  }
+}
+>>>>>>> 0020135ca9c148f2f754bd91d47671c8bcf76670
