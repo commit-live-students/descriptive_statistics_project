@@ -1,9 +1,7 @@
-{"notebook":
-    {
-        "folder": "descriptive_statistics_project",
-        "q01_calculate_statistics": "q01_calculate_statistics.ipynb",
-        "q02_plot": "q02_plot.ipynb",
-    
-    }
-
+{
+  "notebook": {
+    "folder": "descriptive_statistics_project",
+    "q01_calculate_statistics": "q01_calculate_statistics.ipynb",
+    "q02_plot": "q02_plot.ipynb"
+  }
 }
