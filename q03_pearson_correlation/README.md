@@ -15,14 +15,14 @@ For these you don't need to load the data, we have already done it for you.
 Calculates the Pearson Correlation Coefficient (r) for the SalePrice column for the two loaded datasets.
 
 
-#### Parameters:
+### Parameters:
 
 None 
 
 The required data has already been loaded for you.
 
 
-#### Returns:
+### Returns:
 
 | Return | dtype | description |
 | --- | --- | --- | 
