@@ -6,12 +6,12 @@ One of the most basic tools to summarise a dataset is central tendency measure. 
 
 * Returns the values of mean, median and mode for the for the SalePrice column.
 
-#### Parameters:
+### Parameters:
 This function takes in no parameters.
 
 All the required data has already been loaded 
 
-#### Returns:
+### Returns:
 
 | Return | dtype | description |
 | --- | --- | --- | 
