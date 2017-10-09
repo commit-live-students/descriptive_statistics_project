@@ -16,12 +16,12 @@ Plots the following things for the SalePrice column
 **Note :** 
 * You can use the `axvline()` or any other equivalent function in `matplotlib` to draw the lines
 
-#### Parameters:
+### Parameters:
 None
 
 All the required data has already been loaded 
  
-#### Returns:
+### Returns:
 
 | Return | dtype | description |
 | --- | --- | --- | 
