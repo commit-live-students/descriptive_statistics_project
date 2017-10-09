@@ -1,7 +1,7 @@
-## Spearman Correlation Coefficient
+# Spearman Correlation Coefficient
 
 
-**Now what is Spearman Correlation Coefficient?**
+## Now what is Spearman Correlation Coefficient?
 
 Pearson Correlation measures the strength of the linear relationship between normally distributed variables.
 
@@ -26,14 +26,17 @@ For simplicity, we can rank them in a increasing order of values.
 
 For these you don't need to load the data, we have already done it for you.
 
-You must calculate the Spearman Correlation Coefficient between the SalePrice column for the loaded datasets.
-#### Parameters:
+## Write a function `spearman_correlation()` that
+
+Calculate the Spearman Correlation Coefficient between the SalePrice column for the loaded datasets.
+
+### Parameters:
 
 None 
 
 The required data has already been loaded for you.
 
-#### Returns:
+### Returns:
 
 | Return | dtype | description |
 | --- | --- | --- | 
