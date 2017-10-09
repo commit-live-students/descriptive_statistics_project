@@ -28,7 +28,7 @@ For these you don't need to load the data, we have already done it for you.
 
 ## Write a function `spearman_correlation()` that
 
-Calculate the Spearman Correlation Coefficient between the SalePrice column for the loaded datasets.
+Calculates the Spearman Correlation Coefficient between the SalePrice column for the loaded datasets.
 
 ### Parameters:
 
