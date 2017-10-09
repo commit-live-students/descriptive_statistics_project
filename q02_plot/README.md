@@ -1,4 +1,4 @@
-# Visualize mean, median and mode 
+# Visualize & Plot mean, median and mode 
 
 Impressive start ,now lets keep this persisted motivation and focus on the next task.
 
@@ -6,15 +6,14 @@ Since, we have found the mean, median and mode, let's plot and see where these p
 
 For these you don't need to load the data, we have already done it for you.
 
-Plotting the values returned from the previous task will help us visualize the data better.
+## Write a function  `plot()` that
 
-You need to plot the following things for the SalePrice column
+Plots the following things for the SalePrice column
 * Mean
 * Median
 * Mode
 
 **Note :** 
-* You can use function defined in the previous assignment(s) if needed
 * You can use the `axvline()` or any other equivalent function in `matplotlib` to draw the lines
 
 #### Parameters:
