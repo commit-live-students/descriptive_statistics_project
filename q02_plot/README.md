@@ -8,7 +8,7 @@ For these you don't need to load the data, we have already done it for you.
 
 ## Write a function  `plot()` that
 
-Plots the following things for the SalePrice column
+Plots the following things for the SalePrice column, against the histogram of SalePrice column
 * Mean
 * Median
 * Mode
@@ -23,6 +23,4 @@ All the required data has already been loaded
  
 ### Returns:
 
-| Return | dtype | description |
-| --- | --- | --- | 
-| Plot | | Lines showing mean, median and mode for the SalePrice column|
+This function plots the values of `mean`, `median` and `mode` against the histogram of SalePrice column. This function returns nothing.
