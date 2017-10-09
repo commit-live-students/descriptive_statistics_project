@@ -6,6 +6,7 @@ from ..build import calculate_statistics
 
 class TestLoad_distplot(TestCase):
     def test_calculate_statistics(self):
+        
         # Input parameters tests
         args = getargspec(calculate_statistics)
         self.assertEqual(len(args[0]), 0, "Expected arguments %d, Given %d" % (0, len(args[0])))
