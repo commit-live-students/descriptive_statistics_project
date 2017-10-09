@@ -1,13 +1,24 @@
-import sys, os
-sys.path.append(os.path.join(os.path.dirname(os.curdir)))
-
-import pandas as pd
+import numpy
+from inspect import getargspec
 from unittest import TestCase
-from q01_calculate_statistics.build import calculate_statistics
+from ..build import calculate_statistics
+
 
 class TestLoad_distplot(TestCase):
     def test_calculate_statistics(self):
         mean, median, mode = calculate_statistics()
-        self.assertAlmostEqual(mean, 185479.51124002901, places=2)
-        self.assertAlmostEqual(median, 167500.0, places=1)
-        self.assertAlmostEqual(pd.Series(mode).values, 140000)
+        args = getargspec(calculate_statistics)
+
+        # Input parameters tests
+        self.assertEqual(len(args[0]), 0, "Expected arguments %d, Given %d" % (len(args[0]), 0))
+        self.assertEqual(args[3], None, "Expected default values do not match given default values")
+
+        # Return type tests
+        self.assertIsInstance(mean, float, "Expected data type for mean is float you are returning %s" % (type(mean)))
+        self.assertIsInstance(median, float, "Expected data type for median is float you are returning %s" % (type(median)))
+        self.assertIsInstance(mode, numpy.int64, "Expected data type for mode is numpy.int64 you are returning %s" % (type(mode)))
+
+        # Return value tests
+        self.assertAlmostEqual(mean, 185479.51124002901, 2, "Return `mean` value does not match expected value")
+        self.assertAlmostEqual(median, 167500.0, 1, "Return `median` value does not match expected value")
+        self.assertAlmostEqual(mode, 140000, "Return `mode` value does not match expected value")
