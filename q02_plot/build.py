@@ -2,6 +2,8 @@
 # Default Imports
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from greyatomlib.descriptive_stats.q01_calculate_statistics.build import calculate_statistics
 
