@@ -9,9 +9,7 @@ def calculate_statistics():
     mean_sales_price = sale_price.mean()
     median_sales_price = sale_price.median()
     mode_sales_price = sale_price.mode()[0]
+    print(type(mode_sales_price))
 
 
-
-    print(mean_sales_price,median_sales_price,mode_sales_price)
-
-calculate_statistics()
+    return mean_sales_price,median_sales_price,mode_sales_price
