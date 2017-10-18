@@ -13,5 +13,3 @@ def correlation():
     x=dataframe_1['SalePrice']
     y=dataframe_2['SalePrice']
     return np.corrcoef(x,y)[0,1]
-
-correlation()
