@@ -11,8 +11,11 @@ sale_price = dataframe.loc[:, 'SalePrice']
 # Draw the plot for the mean, median and mode for the dataset
 def plot():
     mean, median, mode = calculate_statistics()
-    gaussian_numbers = np.random.randn(1000)
-    plt.hist(gaussian_numbers)
-    #plt.show()
 
-plot()
+    plt.axvline(mean, label="Mean", color='g')
+    plt.axvline(median, label="Median", color='r')
+    plt.axvline(mode, label="Mode", color="y")
+    plt.legend()
+    plt.show()
+
+    return
