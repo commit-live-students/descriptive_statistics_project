@@ -1,5 +1,6 @@
 # Default Import
 import pandas as pd
+from scipy.stats import spearmanr
 
 dataframe_1 = pd.read_csv('data/house_prices_multivariate.csv')
 house_price = dataframe_1.loc[:, 'SalePrice']
@@ -9,4 +10,6 @@ weight_of_nasa_space_shuttle = dataframe_2.loc[:, 'SalePrice']
 
 
 def spearman_correlation():
-    # Enter code here
+    a = spearmanr(house_price,weight_of_nasa_space_shuttle)
+    b = a.correlation
+    return b
