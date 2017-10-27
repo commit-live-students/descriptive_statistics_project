@@ -7,4 +7,8 @@ sale_price = data.loc[:, "SalePrice"]
 
 # Return mean,median & mode for the SalePrice Column
 # Write your code here
-
+def calculate_statistics():
+    mean = sale_price.mean()
+    median = sale_price.median()
+    mode = sale_price.mode().loc[0]
+    return (mean, median, mode)
