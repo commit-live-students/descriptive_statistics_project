@@ -1,0 +1,1 @@
+{"stats": {"passes": 1, "skipped": 0, "encoding": "UTF-8", "errors": 0, "failures": 0, "total": 1}, "results": [{"classname": "descriptive_statistics_project.q03_pearson_correlation.tests.test_q03_correlation:TestLoad_regression_plot", "type": "success", "name": "test_correlation", "time": 0.001010894775390625}]}
