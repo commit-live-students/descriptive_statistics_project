@@ -1,5 +1,5 @@
 import numpy
-from inspect import getfullargspec
+from inspect import getargspec
 from unittest import TestCase
 from ..build import calculate_statistics
 
@@ -8,10 +8,9 @@ class TestLoad_distplot(TestCase):
     def test_calculate_statistics(self):
         
         # Input parameters tests
-        args = getfullargspec(calculate_statistics).args
-        args_default = getfullargspec(calculate_statistics).defaults
-        self.assertEqual(len(args), 0, "Expected arguments %d, Given %d" % (0, len(args)))
-        self.assertEqual(args_default, None, "Expected default values do not match given default values")
+        args = getargspec(calculate_statistics)
+        self.assertEqual(len(args[0]), 0, "Expected arguments %d, Given %d" % (0, len(args[0])))
+        self.assertEqual(args[3], None, "Expected default values do not match given default values")
 
         # Return type tests
         mean, median, mode = calculate_statistics()
