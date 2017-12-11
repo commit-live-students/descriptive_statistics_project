@@ -14,7 +14,8 @@ def plot():
     median=sale_price.median()
     mode=np.array(sale_price.mode(), dtype=np.int64)[0]
     plt.hist(sale_price,bins=60)
-    plt.axvline(x=mean, color='r',linewidth=2)
-    plt.axvline(x=median, color='g',linewidth=2)
-    plt.axvline(x=mode, color='y',linewidth=2)
+    plt.axvline(x=mean, color='r',linewidth=2,label='Mean')
+    plt.axvline(x=median, color='g',linewidth=2, label='Median')
+    plt.axvline(x=mode, color='y',linewidth=2, label='Mode')
+    plt.legend()
     plt.show()
