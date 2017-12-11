@@ -1,6 +1,8 @@
 # Default Imports
 import numpy as np
 import pandas as pd
+import os.path
+
 
 data = pd.read_csv('data/house_prices_multivariate.csv')
 sale_price = data.loc[:, "SalePrice"]
