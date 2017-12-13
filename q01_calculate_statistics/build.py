@@ -9,5 +9,3 @@ sale_price = data.loc[:, "SalePrice"]
 # Return mean,median & mode for the SalePrice Column
 # Write your code here
 
-
-

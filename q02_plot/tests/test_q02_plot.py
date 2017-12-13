@@ -4,11 +4,12 @@ from unittest import TestCase
 
 
 class TestLoad_distplot(TestCase):
-    def test_plot(self):
-        
-        # Input parameters tests
+    def test_plot(self):  # Input parameters tests
         args = getargspec(plot)
         self.assertEqual(len(args[0]), 0, "Expected arguments %d, Given %d" % (0, len(args[0])))
+
+    def test_plot_default(self):  # Input parameters defaults
+    	args = getargspec(plot)
         self.assertEqual(args[3], None, "Expected default values do not match given default values")
 
         # Return data types
