@@ -5,7 +5,9 @@ import pandas as pd
 data = pd.read_csv('data/house_prices_multivariate.csv')
 sale_price = data.loc[:, "SalePrice"]
 
+def calculate_statistics():
+    mean = sale_price.mean()
+    median = sale_price.median()
+    mode = np.int64(sale_price.mode())
 
-# Return mean,median & mode for the SalePrice Column
-# Write your code here
-
+    return (mean, median, mode)
