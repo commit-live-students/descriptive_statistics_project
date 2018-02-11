@@ -11,8 +11,7 @@ def calculate_statistics():
     Mean = sale_price.mean()
     Median = np.median(sale_price)
     Mode = sale_price.mode()
-    M = np.array(Mode, dtype=np.int64)
     # type(M)
-    return Mean, Median, M[0]
+    return Mean, Median, Mode[0]
 
 
