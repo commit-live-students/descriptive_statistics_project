@@ -6,6 +6,6 @@ from greyatomlib.descriptive_stats.q01_calculate_statistics.build import calcula
 dataframe = pd.read_csv('data/house_prices_multivariate.csv')
 sale_price = dataframe.loc[:, 'SalePrice']
 
-
+def plot():
+    
 # Draw the plot for the mean, median and mode for the dataset
-
