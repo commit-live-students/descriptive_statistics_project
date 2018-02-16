@@ -10,11 +10,12 @@ sale_price = data.loc[:, "SalePrice"]
 # Write your code here
 def calculate_statistics():
     Mean = sale_price.mean()
-    Median = np.median(sale_price)
+    Median = sale_price.median()
     Mode = sale_price.mode()
-    #print type(Mean)
-    #print type(Median)
-    #print type(Mode[0])
-    return Mean, Median, Mode[0]
 
-#print calculate_statistics()
+    print type(Mean)
+    print type(Median)
+    print type(Mode[0])
+    return Mean,Median,Mode[0]
+
+print calculate_statistics()
