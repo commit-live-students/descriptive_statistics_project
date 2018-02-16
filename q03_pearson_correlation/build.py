@@ -12,7 +12,7 @@ def correlation():
     Sale_price1 = dataframe_1.loc[:,'SalePrice']
     Sale_price2 = dataframe_2.loc[:,'SalePrice']
     cr = np.corrcoef(Sale_price1, Sale_price2)[0,1]
-    #return Sale_price1,Sale_price2
+    
     #print type(cr)
     return cr
 
