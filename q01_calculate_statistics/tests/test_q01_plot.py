@@ -1,16 +1,16 @@
 import numpy
-from inspect import getargspec
+from inspect import getfullargspec
 from unittest import TestCase
 from ..build import calculate_statistics
 
 
 class TestLoad_distplot(TestCase):
     def test_calculate_statistics(self):  # Input parameters tests
-        args = getargspec(calculate_statistics)
+        args = getfullargspec(calculate_statistics)
         self.assertEqual(len(args[0]), 0, "Expected arguments %d, Given %d" % (0, len(args[0])))
 
     def test_calculate_statistics_default(self): # Input parameters defaults
-        args = getargspec(calculate_statistics)
+        args = getfullargspec(calculate_statistics)
         self.assertEqual(args[3], None, "Expected default values do not match given default values")
 
     def test_calculate_statistics_mean_type(self):  # Return type tests
