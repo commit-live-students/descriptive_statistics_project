@@ -1,3 +1,4 @@
+# %load q02_plot/build.py
 # Default Imports
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -8,4 +9,11 @@ sale_price = dataframe.loc[:, 'SalePrice']
 
 
 # Draw the plot for the mean, median and mode for the dataset
+def plot():
+    m,md,mo=calculate_statistics()
+    plt.hist(sale_price)
+    plt.axvline(x=m,label='mean',c='r')
+    plt.axvline(x=md,label='median',c='g')
+    plt.axvline(x=mo,label='mode',c='y')
+    plt.show()
 
