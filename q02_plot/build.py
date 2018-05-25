@@ -2,6 +2,7 @@
 # Default Imports
 import pandas as pd
 import matplotlib.pyplot as plt
+plt.switch_backend('agg')
 from greyatomlib.descriptive_stats.q01_calculate_statistics.build import calculate_statistics
 
 
@@ -16,12 +17,13 @@ median=sale_price.median()
 def plot():
     plt.figure(figsize=(10, 6))
     plt.hist(sale_price, bins=40)
-    plt.plot([mode]*300, range(300), label='mode')
-    plt.plot([median]*300, range(300), label='median')
-    plt.plot([mean]*300, range(300), label='mean')
-    plt.ylim(0, 250)
-    return plt.show()
+    plt.axvline(x=mode[0],color='r')
+    plt.axvline(x=median,color='b')
+    plt.axvline(x=mean,color='y')
+    plt.show()
+    
     
 
 plot()
+
 
