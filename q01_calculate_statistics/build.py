@@ -12,11 +12,9 @@ sale_price = data.loc[:, 'SalePrice']
 def calculate_statistics():
     mean=data.loc[:, 'SalePrice'].mean()
     median=data.loc[:, 'SalePrice'].median()
-    mode=data.loc[:, 'SalePrice'].mode()
+    mode=data.loc[:, 'SalePrice'].mode()[0]
     return mean,median,mode
 
 calculate_statistics()
-data.loc[:, 'SalePrice'].mean()
-data.loc[:, 'SalePrice'].median()
-data.loc[:, 'SalePrice'].mode()
+
 
