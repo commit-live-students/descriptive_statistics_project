@@ -7,10 +7,11 @@ Spearman's correlation applies to ranks and so provides a measure of a monotonic
 
 
 **Spearman Correlation Coefficient can be calculated as follows :**
-$$r_s = 1 - \frac{6\sum{d^2}}{n(n^2-1)}$$
 
-where $d$ - difference between the ranks
-      $n$ - sample size
+![formula](../images/formula.gif)
+
+where d - difference between the ranks
+      n - sample size
 
 
 
