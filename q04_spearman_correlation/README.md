@@ -10,8 +10,7 @@ Spearman's correlation applies to ranks and so provides a measure of a monotonic
 
 ![formula](../images/formula.gif)
 
-where d - difference between the ranks
-      n - sample size
+where d - difference between the ranks and n - sample size
 
 
 
