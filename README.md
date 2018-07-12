@@ -14,7 +14,7 @@ You can use any numpy and matplotlib objects for the purpose of this exercise.
 
 For this exercise, we will use the House Prices dataset, which we have already discussed in the session. 
 The dataset contains `SalePrice` of around 1400 houses. The dataset is a part of a larger dataset.
-You can read about the dataset description [here](https://github.com/MayureshShilotri/GA_extended_content/blob/master/Data/house_pricing/data_description.txt).
+You can read about the dataset description [here](https://raw.githubusercontent.com/commit-live-students/descriptive_statistics_project/master/data/datadocumentation.txt).
 
 ## Why solve this assignment?
 
