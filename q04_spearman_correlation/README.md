@@ -3,14 +3,16 @@
 
 ## Now what is Spearman Correlation Coefficient?
 
-Pearson Correlation measures the strength of the linear relationship between normally distributed variables.
-
-However, it is not always possible to have a linear relationship between the variables in a dataset.
-
-There might come a situation where the variables will not be related linearly, in such situations we use Spearman Correlation Coefficient. Say, the variables might not be normally distributed or the relationship between the variables might not be linear
+Spearman's correlation applies to ranks and so provides a measure of a monotonic relationship between two continuous random variables. It is also useful with ordinal data and is robust to outliers (unlike Pearson's correlation). You can read more on Spearman Correlation Coefficient and how it is calculate [here](http://www.statisticshowto.com/spearman-rank-correlation-definition-calculate/)
 
 
 **Spearman Correlation Coefficient can be calculated as follows :**
+$$r_s = 1 - \frac{6\sum{d^2}}{n(n^2-1)}$$
+
+where $d$ - difference between the ranks
+      $n$ - sample size
+
+
 
 * Find the ranks for each individual row in a column. The values can be ranked as per any criteria.
 For simplicity, we can rank them in a increasing order of values.
