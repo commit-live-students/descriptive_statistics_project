@@ -6,3 +6,5 @@ dataframe_2 = pd.read_csv('data/house_prices_copy.csv')
 
 # Your code here
 
+def spearman_correlation():
+    return dataframe_1['SalePrice'].corr(dataframe_2['SalePrice'],method='spearman')

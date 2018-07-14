@@ -8,3 +8,9 @@ sale_price = dataframe.loc[:, 'SalePrice']
 
 
 # Draw the plot for the mean, median and mode for the dataset
+def plot():
+    mean,median,mode=calculate_statistics()
+    result = plt.hist(sale_price, bins=20, color='c', edgecolor='k', alpha=0.65)
+    plt.axvline(mean, color='k', linestyle='dashed', linewidth=1)
+    # Draw the plot for the mean, median and mode for the dataset
+    plt.show()
