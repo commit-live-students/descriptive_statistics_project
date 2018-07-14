@@ -11,5 +11,5 @@ sale_price = data.loc[:, "SalePrice"]
 def calculate_statistics():
     mean=pd.to_numeric(sale_price.mean(), downcast='float')
     median=pd.to_numeric(sale_price.median(), downcast='float')
-    mode=pd.to_numeric(sale_price.mode(), downcast='signed')
+    mode=sale_price.mode()[0]
     return(mean,median,mode)
