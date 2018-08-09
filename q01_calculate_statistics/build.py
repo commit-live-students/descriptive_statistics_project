@@ -18,7 +18,7 @@ def calculate_statistics():
     return mean,median,mode[0]
 
 
-mean,median,mode=calculate_statistics()
+calculate_statistics()
 
 
 
