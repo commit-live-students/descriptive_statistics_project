@@ -29,8 +29,7 @@ def spearman_correlation():
     x=x.join(d2)
     x.rename(columns={0:'d2'},inplace=True)
     sprc=6*x.d2.sum()/(len(x)**3-len(x))
-    return x[['SalePrice','SalePrice2']].corr()['SalePrice'][1]
+    return 1-sprc
     
-
 spearman_correlation()
 
