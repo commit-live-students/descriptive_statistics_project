@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import statistics as s
 from greyatomlib.descriptive_stats.q01_calculate_statistics.build import calculate_statistics
 
-plt.switch_backend('agg')
+#plt.switch_backend('agg')
 dataframe = pd.read_csv('data/house_prices_multivariate.csv')
 sale_price = dataframe.loc[:, 'SalePrice']
 
@@ -19,9 +19,12 @@ def plot():
     mode = s.mode(sale_price)
     median = np.median(sale_price)
     plt.hist(sale_price)
-    plt.plot([mean]*800,np.arange(0,800),label='mean')
-    plt.plot([median]*800,np.arange(0,800),label='median')
-    plt.plot([mode]*800,np.arange(0,800),label='mode')
+#     plt.plot([mean]*800,np.arange(0,800),label='mean')
+#     plt.plot([median]*800,np.arange(0,800),label='median')
+#     plt.plot([mode]*800,np.arange(0,800),label='mode')
+    plt.axvline(x=mean,c='r',label='mean')
+    plt.axvline(x=median,c='g',label='median')
+    plt.axvline(x=mode,c='y',label='mode')
     plt.legend()
     plt.show()
 
