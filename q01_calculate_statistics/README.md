@@ -17,4 +17,4 @@ All the required data has already been loaded
 | --- | --- | --- | 
 | mean |Float |mean of the house prices|
 | median |Float |median of the house prices|
-| mode |numpy.int64 | mode of the house prices|
+| mode |pandas.Series | mode of the house prices|
