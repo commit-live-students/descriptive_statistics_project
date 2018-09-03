@@ -14,11 +14,11 @@ def spearman_correlation():
 
     n = sale_price_2.shape[0]
     #calculate ranks using rank function
-    sale_price_1['rank_1'] = sale_price_1['SalePrice'].rank(ascending=1)
-    sale_price_2['rank_2'] = sale_price_2['SalePrice'].rank(ascending=1)
+    sale_price_1['rank_1'] = sale_price_1.loc[:,'SalePrice'].rank(ascending=1)
+    sale_price_2['rank_2'] = sale_price_2.loc[:,'SalePrice'].rank(ascending=1)
 
     #Calculate the difference in ranks and calculate square of that diff
-    d = sale_price_2['rank_2'] - sale_price_1['rank_1']
+    d = sale_price_2.loc[:,'rank_2'] - sale_price_1.loc[:,'rank_1']
     d_squared = d**2
     d2 = d_squared.sum()  # sum the d squares
 
@@ -27,8 +27,11 @@ def spearman_correlation():
     
     return p
 
+if __name__ == '__main__':
+    spearman_correlation()
+    
 
-spearman_correlation()
+
 
 
 
