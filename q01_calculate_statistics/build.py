@@ -12,9 +12,9 @@ sale_price = data.loc[:, 'SalePrice']
 # Write your code here
 def calculate_statistics():
     '''Calculate statistics'''
-    mean = np.mean(sale_price)
-    mode = s.mode(sale_price)
-    median = np.median(sale_price)
+    mean = sale_price.mean()
+    mode = sale_price.mode()[0]
+    median = sale_price.median()
     return mean, median, mode
 
 #call the function
