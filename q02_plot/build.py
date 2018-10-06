@@ -11,7 +11,10 @@ sale_price = dataframe.loc[:, 'SalePrice']
 
 # Draw the plot for the mean, median and mode for the dataset
 def plot():
+    
     plt.hist(sale_price, bins = 50)
+    
+    #for plotting vertical line in figure use axvline function
     plt.axvline(sale_price.mean(),color = 'r')
     plt.axvline(sale_price.median(), color = 'y')
     plt.axvline(sale_price.mode()[0],color= 'b')
