@@ -18,11 +18,8 @@ def plot():
     mode = sale_price.mode()
     plt.figure(figsize=(10,6))
     plt.hist(sale_price, bins=40)
-    plt.plot([mode]*300, range(300), label='mode')
-    plt.plot([median]*300, range(300), label='median')
-    plt.plot([mean]*300, range(300), label='mean')
-    plt.ylim(0, 250)
-    plt.legend()
+   
+ 
     plt.show()
 plot()
 
