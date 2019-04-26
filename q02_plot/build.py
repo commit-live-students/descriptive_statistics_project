@@ -6,7 +6,9 @@ from greyatomlib.descriptive_stats.q01_calculate_statistics.build import calcula
 plt.switch_backend('agg')
 dataframe = pd.read_csv('data/house_prices_multivariate.csv')
 sale_price = dataframe.loc[:, 'SalePrice']
-
-
-# Draw the plot for the mean, median and mode for the dataset
-
+def plot():
+    mean_plot=sale_price.plot(kind=Histogram)
+    median_plot=sale_price.plot(kind=Histogram)
+    mode_plot=sale_price.plot(kind=Histogram)
+    return(mean_plot, median_plot, mode_plot)
+print(plot())
