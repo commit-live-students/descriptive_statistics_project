@@ -7,6 +7,21 @@ plt.switch_backend('agg')
 dataframe = pd.read_csv('data/house_prices_multivariate.csv')
 sale_price = dataframe.loc[:, 'SalePrice']
 
-
 # Draw the plot for the mean, median and mode for the dataset
+def plot():
 
+    mean = sale_price.mean()
+    median = sale_price.median()
+    mode = np.int64(sale_price.mode())
+
+    plt.hist(sale_price)
+    plt.axvline(x=mean, color = 'r')
+    plt.show()
+
+    plt.hist(sale_price)
+    plt.axvline(x=median, color = 'r')
+    plt.show()
+
+    plt.hist(sale_price)
+    plt.axvline(x=mode, color = 'r')
+    plt.show()
